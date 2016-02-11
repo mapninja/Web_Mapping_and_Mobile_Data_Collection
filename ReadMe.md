@@ -45,19 +45,36 @@ When entering coded values, make sure the code field matches the Field Type spec
 Next, you'll create the feature class to hold the collected information. Feature classes are essentially containers for information, where the pieces of information share similar characteristics, whether that be their geometry or their attributes.
 
 1. Right-click the geodatabase, point to New, and click Feature Class.
-Create a new feature class
-
+2. Create a new feature class. The New Feature Class wizard opens. It walks you through the necessary steps to customize the feature class.
 ``Note:
 A feature class is a collection of features that share the same geometry type and information model.
 ``
+2. Type Damage_to_Residential_Buildings as the name for the feature class, type Damage to Residential Buildings as the alias, and choose Point Features as the feature type. Click Next.
+3. When creating this feature class, choose a coordinate system. Coordinate systems allow your features to be projected properly and accurately on a map, making the features appear in the correct locations. For this tutorial, select WGS 1984 Web Mercator (auxiliary sphere). 
+4. Click Next.
+5. Click Next to accept the default XY Tolerance settings.
+6. Click Next to accept the default database storage configuration.
 
-2. The New Feature Class wizard opens. It walks you through the necessary steps to customize the feature class.
+###Set up the fields
 
-3. Type Damage_to_Residential_Buildings as the name for the feature class, type Damage to Residential Buildings as the alias, and choose Point Features as the feature type. Click Next.
-4. When creating this feature class, choose a coordinate system. Coordinate systems allow your features to be projected properly and accurately on a map, making the features appear in the correct locations. For this tutorial, select WGS 1984 Web Mercator (auxiliary sphere). Click Next.
-Choose the spatial reference
-Click Next to accept the default XY Tolerance settings.
-Click Next to accept the default database storage configuration.
+The fields are a key part of your information model. They provide the structure of the information your field-workers collect and provide rules for the types of information collected about a feature.
+
+1. The first field you create will be used to record the number of occupants that live in the building being inspected. Click the first empty field and type NUMOCCUP for Field Name. Under Data Type, choose Long Integer.
+2. Under the Field Properties, click the Alias check box, and change the default alias NUMOCCUP to Number of Occupants. The alias is what your field-workers see on the data collection form, so it's important that it makes sense to them.
+3. The next field you create takes advantage of the coded domain created earlier in this tutorial. Click the next empty field and type TYPDAMAGE. Choose Text as the data type.
+Under Field Properties, type Extent of Damage as the alias for the field.
+Check the empty Domain text box, and choose ExtentDamage.
+Setting the domain
+The final field to add is the description field. Name this field DESCDAMAGE and make it a text field. Update the alias to Description of Damage.
+Note:
+The full damage assessment template has more features than described in this tutorial. For a complete set of fields, download the Damage Assessment Template map package. However, you can continue the Collector tutorials using just the three fields you created.
+
+Click Finish to complete the feature class creation.
+The feature class you created is added to the map and appears in the table of contents in ArcMap.
+
+To allow users to take pictures in the field and attach them to their assessment reports, enable attachments on the feature class you just created. To do so, right-click the feature class in the Catalog window, choose Manage, and click Create Attachments.
+
+
 
 #Creating a Map to Share for Data Collection
 [http://doc.arcgis.com/en/collector/android/create-maps/create-and-share-a-collector-map.htm](http://doc.arcgis.com/en/collector/android/create-maps/create-and-share-a-collector-map.htm)
