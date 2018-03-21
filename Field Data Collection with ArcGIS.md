@@ -36,8 +36,9 @@ Domains are created at the Geodatabase level, rather than the layer level, since
 2. Browse to the **Data** folder, find the PREDATION.xls file, click on the + sign to expand and reveal the WOrksheet inside this Excel File. 
 3. Select the predation$ worksheet as the input table, use the same name for the output table, and click OK to import the table.
 
-![Screenshot 2017-02-07 15.42.59.png](./images/Screenshot 2017-02-07 15.42.59.png)
-3. When the import has completed, drag the new geodatabase table into your Data Frame or Table of Contents and Open it to examine the data.
+![Screenshot 2017-02-07 15.42.59.png](./images/Screenshot 2017-02-07 15.42.59.png)  
+
+4. When the import has completed, drag the new geodatabase table into your Data Frame or Table of Contents and Open it to examine the data.
 
 Examine the available fields and note that several of the field have data values that repeat many times. These fields make excellent candidates for fields driven by domains in our resulting app. These fields include: Species; Age, Sex, and COD (Cause of Death). 
 
