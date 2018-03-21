@@ -1,20 +1,20 @@
-#Using ArcGIS Desktop, ArcGIS.com and Collector 
+# Using ArcGIS Desktop, ArcGIS.com and Collector 
 
 This session will explore using ArcGIS, ArcGIS Online and Collector for ArcGIS to create an integrated spatial data collection system. This tutorial will explore the entire workflow, from preparing the project geodatabase in ArcGIS for Desktop, to deploying the resulting application in ArcGIS Collector and managing offline editing workflows. Our objective will be to deploy an application for the survey of trees, but the workfows and methods we use can be applied to nearly any data collection project. 
 
 
-##Using ArcGIS Desktop and ArcGIS Online for Mobile Data Collection with Collector for ArcGIS
+## Using ArcGIS Desktop and ArcGIS Online for Mobile Data Collection with Collector for ArcGIS
 
 In this excercise, we will create a field data application for the collection of data on the interaction between large African predator species and livestock and other prey. Some of the pre-existing data we will use for the excercise was obtained from the following study of large predator behaviour at the Lewa Wildlife Conservancies near Isiolo, Kenya. 
 
 [Dupuis-Desormeaux M, Davidson Z, Mwololo M, Kisio E, Taylor S, MacDonald SE (2015) Testing the Prey-Trap Hypothesis at Two Wildlife Conservancies in Kenya. PLoS ONE 10(10): e0139537. doi:10.1371/journal.pone.0139537](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0139537)
 
 
-###Preparing your data in ArcGIS for Desktop
+### Preparing your data in ArcGIS for Desktop
 
 The first step in the process will be to prepare the geodatabase that will drive our data collection application, in ArcGIS Desktop. Eventually, this geodatabase will be uploaded to ArcGIS.com for the creation of our data collection application, but much of the "data carpentry" we need to do is best performed locally, on ArcGIS Desktop. 
 
-####Create your geodatabase
+#### Create your geodatabase
 
 Geodatabases organize and store data you collect. Ultimately you'll create a feature class to store damage assessment reports, but first you need to create the geodatabase that holds the feature class. Take the following steps to create a file geodatabase by using the Catalog window in ArcMap.
 
@@ -24,7 +24,7 @@ Point to New.
 3.  Click File Geodatabase to create a new file geodatabase in the location you selected. Name your geodatabase **PredationSurvey**.
 4. Right-click on your new geodatbase and select **Make Default Geodatabase**.
 
-###Create and Define geodatabase domains
+### Create and Define geodatabase domains
 
 Some fields in your data should be populated from a set of choices. By creating domains in your geodatabase, you provide a list of choices your users can choose from when they are collecting data. This provides several advantages, including the enforcement of controlled vocabularies in your data collection, data collection speed, etc... 
 
@@ -57,7 +57,7 @@ We will use the Summarize function to create tables for our domains.
 
 ![Screenshot 2017-02-07 16.01.10.png](./images/Screenshot 2017-02-07 16.01.10.png)
 
-###Cleaning Up the Data
+### Cleaning Up the Data
 Note that there are several duplicates in the results table, which is a result of several different spellings, extra spaces, capitalization, etc... this is exactly what we would like to avoid by using domains in our Collector App. Now, we'll quickly clean the table up before we import it as a domain for our GDB.
 
 1. Right-click on the species table in the ToC and select Edit Features>Start Editing
@@ -76,7 +76,7 @@ Repeat the above step for the **AGE**, and **COD** fields, we will enter the dam
 
 Note: It might be useful to change the values in AGE field to 'Juvenile', 'Sub-Adult', 'Adult', 'Unknown'
 
-###Manually Entering Domain Values into the Geodatabase
+### Manually Entering Domain Values into the Geodatabase
 
 1. In the Catalog tree, right-click the PredationSurvey Geodatabase and click Properties.
 2. Click the Domains tab.
@@ -98,7 +98,7 @@ When entering coded values, make sure the code field matches the Field Type spec
 
 9. Click OK to create the new domain in the geodatabase and close the dialog box.
 
-###Importing a Domain to the Geodatabase from a Table
+### Importing a Domain to the Geodatabase from a Table
 
 Sometimes, you might want to create a Domain with so many values that it is not practical, or at least convenient, to enter them manually. You can also create domains by importing tables, which is why we prepared domain tables for the **SPECIES**, **AGE** and **COD** fields.
 
@@ -121,7 +121,7 @@ Repeat the Table to Domain method to import the remaining Domains (AGE and COD),
 
 ![Screenshot 2017-02-07 16.59.54.png](./images/Screenshot 2017-02-07 16.59.54.png)
 
-###Create the Feature Class to Contain Your Data
+### Create the Feature Class to Contain Your Data
 
 Now, you'll create the feature class to hold the collected information. Feature classes are essentially containers for information, where the pieces of information share similar characteristics, whether that be their geometry or their attributes.
 
@@ -149,7 +149,7 @@ Now, you'll create the feature class to hold the collected information. Feature 
 
 Note: Through the **Feature Class Properties>Fields** tab, you can add additional fields (with or without domains) to complete your data model.
 
-###Create Symbology/Editing Templates
+### Create Symbology/Editing Templates
 
 Even though we've no data in our feature class, yet, we DO have a domain assigned to the field that we will want to symbolize and organize our data collection around, COD.
 
@@ -169,7 +169,7 @@ Note that when you created your new feature class, it was automatically added to
 
 8. Save your work
 
-###Enabling Attachments in Collector
+### Enabling Attachments in Collector
 
 One of the most powerful features in Collector for ArcGIS is the ability to attach photographs to records in the database. This means that data that can be captured in a photograph can be quickly captured using the device's camera, and transcribed into databases at later dates. An example might be for a bike rack survey, in which the style, capacity, condition, etc... can mostly be captured in a single image.
 
@@ -183,7 +183,7 @@ To have the ability to add photos to our survey application, we need to take one
 
 ![Screenshot 2017-02-08 11.42.46.png](./images/Screenshot 2017-02-08 11.42.46.png)
 
-###Publish your data
+### Publish your data
 
 We now need to make our data avaialble to the Collector for ArcGIS application on the internet. This can be done through ArcGIS for Server or to an ArcGIS.com organization. In this tutorial, you'll publish the service to your ArcGIS organization, where it will be available as a layer that you can add to, not only to the map that drives your data collection app in Collector, but to other, public facing maps, that will visualize your data as it is collected.
 
@@ -231,7 +231,7 @@ Now that you've created your data model and published it to ArcGIS.com, we are r
 
 
 
-#Creating a Map to Share for Data Collection
+# Creating a Map to Share for Data Collection
 [http://doc.arcgis.com/en/collector/android/create-maps/create-and-share-a-collector-map.htm](http://doc.arcgis.com/en/collector/android/create-maps/create-and-share-a-collector-map.htm)
 
 

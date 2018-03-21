@@ -1,12 +1,12 @@
-#Creating the ArcGIS.com Map for Your Collector App.
+# Creating the ArcGIS.com Map for Your Collector App.
 
 In this part of the workshop, you'll create a map to use to collect data about Large Animal Predation. You'll build a map by starting with a basemap, adding the PredationEvents layer (that you published in the previous exercise), configuring the data collection form, and customizing the application settings. Finally, you'll share the map to make it available to your surveyors.
 
-##Create a map
+## Create a map
 
 In the following sections, you'll create a map by starting with a basemap, adding the PredationEvent layer, and exploring the details exposed for the assessments.
 
-###Start a new map
+### Start a new map
 
 1. Open a web browser and sign into your ArcGIS.com Organization account.
 
@@ -16,7 +16,7 @@ In the following sections, you'll create a map by starting with a basemap, addin
 
 3. Pan and zoom the map so that Kenyatta University is visible if it isn't already.
 
-###Adding Your PredatorSurvey Template Layer
+### Adding Your PredatorSurvey Template Layer
 
 4. Click the **Add** Button on the ribbon and choose **Search for Layers**.
 
@@ -48,14 +48,14 @@ A new feature will be added to the map. You can repeat the above steps to add mo
 
 1. WHen you're done adding features, click on the Edit button to close your editing session.
 
-###Save the map
+### Save the map
 
 1. Click Save Save on the ribbon and choose Save. The Save Map dialog box appears.
 2. Complete the fields on the Save Map dialog box as shown or as appropriate.
 The Save Map dialog box with all fields completed
 3. Click Save Map.
 
-###Test the Pop-Up
+### Test the Pop-Up
 
 1. Zoom in on the map to explore the Predation Events you created.
 2. Click one of the existing Predator Events. Information about the damage assessment displays. 
@@ -68,7 +68,7 @@ This information is available to anyone viewing the map. It also determines the 
 
 You have now made a map by adding a basemap and some layers, and you explored its pop-ups. Much of the value of this map lies in the information contained in its pop-ups. In the next section, you'll see how to configure pop-ups to display the information you want to share.
 
-##Configure the Data Collection Form
+## Configure the Data Collection Form
 
 In the previous section, you made a map by adding a layer and explored the details exposed in the pop-ups. You can customize the information the pop-ups display, as well as the information collected in the field.
 
@@ -103,7 +103,7 @@ Note that the field names in the pop-up are more informative and user friendly. 
 3. 
 Your map is now ready to use for data collection. In the next section, you'll see how to customize the capabilities available when the map is used in Collector.
 
-##Customize the application settings
+## Customize the application settings
 
 Some of the capabilities of maps can be turned on and off. These settings include the ability to route, measure, change basemaps, find locations, and track the location of collectors. By default, the routing, measuring, switching basemaps, and finding locations by address capabilities are enabled. In this section, you'll turn off the routing and measure capabilities and turn on the find locations by layer (feature search) capability, since your field-workers need to search features but don't need to get routes or measure when collecting data.
 
@@ -117,7 +117,7 @@ Some of the capabilities of maps can be turned on and off. These settings includ
 
 Your map is created, configured, and customized. It's ready to be shared with others in your organization.
 
-###Share your map
+### Share your map
 
 Now that your map is ready for use, share it with members of your organization.
 
@@ -133,7 +133,7 @@ Note:
 Your sharing options depend on the organizations and groups to which you belong. You won't see the same options shown in the previous screen capture.
 If your layer needs to be shared, you're prompted to update its sharing to match that of your map. Share the layer so those who can access the map can see the data.
 
-##Sign in to the app to see your map
+## Sign in to the app to see your map
 
 Your map is now ready to use in Collector. Log in to the app to see how the map looks to your field-workers.
 
@@ -156,7 +156,7 @@ Your map is now ready to use in Collector. Log in to the app to see how the map 
 
 5. If your map is not immediately apparent, find your new map by searching for Predator on the **All Maps** page.
 
-##Downloading a Basemap for Offline Collection
+## Downloading a Basemap for Offline Collection
 
 In order to be able to collect data offline with a basemap for reference, we will first download a basemap.  
 
@@ -172,7 +172,7 @@ In order to be able to collect data offline with a basemap for reference, we wil
 
 ![Screenshot_2017-02-10-14-08-08_reduce.png](./images/Screenshot_2017-02-10-14-08-08_reduce.png)
 
-##Collecting Data with Your App
+## Collecting Data with Your App
 
 
 ![Screenshot_2017-02-10-14-09-06_reduce.png](./images/Screenshot_2017-02-10-14-09-06_reduce.png)
